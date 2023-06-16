@@ -16,9 +16,12 @@ let undefinedVariable;
 console.log(typeof nallVariable, nallVariable);
 console.log(typeof undefinedVariable, undefinedVariable);
 
-prompt("Dear User your login is");
-prompt("Your login");
-prompt("Your password");
+let login = prompt('Please enter your login:');
+let email = prompt('Please enter your email:');
+let password = prompt('Please enter your password:');
+
+let message = `Dear User, your email is ${email}, your password is ${password}`;
+alert(message);
 
 let secondsInHour = 60 * 60;
 let secondsInDay = secondsInHour * 24;
